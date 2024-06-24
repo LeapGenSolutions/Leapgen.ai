@@ -79,6 +79,38 @@ code {
   color: #fff;
 }
 
+.about_div1.is-visible {
+  opacity: 0;
+  animation: fade-in-right ease 0.6s forwards;
+  animation-delay: 0.3s;
+}
+
+.about_div2.is-visible {
+  opacity: 0;
+  animation: fade-in-right ease 0.6s forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 /* src/FeaturesSection.css */
 
 .gradient-text {
@@ -96,19 +128,33 @@ code {
 }
 
 .feature-card {
+  transition: transform 0.3s ease-in-out;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   width: 20rem;
-  transition: transform 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 }
 
-/* .feature-card:hover {
-  transform: translateY(-5px);
-} */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-card.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  animation: reveal 0.6s ease-out;
+}
 
 .feature-icon {
   width: 240px;
@@ -323,4 +369,21 @@ code {
   flex-shrink: 0;
   width: 130px; /* Adjust size as needed */
   margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/* Full Details */
+.full_details {
+  opacity: 0;
+  animation: fade-in-right ease 0.8s forwards;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -9,7 +9,7 @@ import Domains from "../components/Domains";
 import Features from "../components/Features";
 import Partners from "../components/Partners";
 
-const Home = () => {
+const Home = (props) => {
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
   const featuresRef = useRef(null);
@@ -29,6 +29,18 @@ const Home = () => {
       servicesRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }
+
+  useEffect(() => {
+    if (props.loadHistory === true) {
+      window.scrollTo({
+        top: 1300,
+        left: 0,
+        behavior: "smooth",
+      });
+      props.setloadHistory(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.loadHistory]);
 
   return (
     <div className="bg-white">
