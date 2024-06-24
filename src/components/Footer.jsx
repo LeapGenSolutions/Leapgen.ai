@@ -23,7 +23,7 @@ function Footer({ handleMenuClick }) {
             </li>
             <li
               onClick={() => {
-                handleMenuClick("hero");
+                handleMenuClick("about");
               }}
             >
               <button className="text-[#FFBFFF] hover:text-[#d640d6] text-[14px] cursor-pointer">
@@ -32,7 +32,7 @@ function Footer({ handleMenuClick }) {
             </li>
             <li
               onClick={() => {
-                handleMenuClick("hero");
+                handleMenuClick("features");
               }}
             >
               <button className="text-[#FFBFFF] hover:text-[#d640d6] text-[14px] cursor-pointer">
@@ -41,7 +41,7 @@ function Footer({ handleMenuClick }) {
             </li>
             <li
               onClick={() => {
-                handleMenuClick("hero");
+                handleMenuClick("domains");
               }}
             >
               <button className="text-[#FFBFFF] hover:text-[#d640d6] text-[14px] cursor-pointer">
@@ -50,7 +50,7 @@ function Footer({ handleMenuClick }) {
             </li>
             <li
               onClick={() => {
-                handleMenuClick("hero");
+                handleMenuClick("services");
               }}
             >
               <button className="text-[#FFBFFF] hover:text-[#d640d6] text-[14px] cursor-pointer">

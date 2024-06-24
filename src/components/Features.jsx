@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import service1 from "../assets/features1.avif";
 import service2 from "../assets/features2.avif";
 import service3 from "../assets/features3.avif";
@@ -31,6 +31,38 @@ const Features = () => {
     },
   ];
 
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    const current_cardRef = cardRefs.current;
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => {
+      if (current_cardRef) {
+        current_cardRef.forEach((card) => {
+          if (card) observer.unobserve(card);
+        });
+      }
+    };
+  }, []);
+
   return (
     <section className="flex flex-col items-center justify-center p-10 bg-[#07020e] pt-[80px]">
       <div className="relative z-10 flex flex-col items-center mb-12 border-[1px] rounded-full border-[#ff6eff] px-4 py-2">
@@ -54,8 +86,12 @@ const Features = () => {
         </h2>
       </div>
       <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-8">
-        {features.map((feature) => (
-          <div key={feature.id} className="feature-card max-md:p-1">
+        {features.map((feature, index) => (
+          <div
+            key={feature.id}
+            className="feature-card max-md:p-1"
+            ref={(el) => (cardRefs.current[index] = el)}
+          >
             <img
               src={feature.icon}
               alt={feature.title}

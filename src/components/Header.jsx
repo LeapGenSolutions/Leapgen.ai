@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logo from "../assets/logo.png";
 
 const Header = ({ handleMenuClick }) => {
   const [navOpen, setNavOpen] = useState(false);
@@ -8,7 +9,7 @@ const Header = ({ handleMenuClick }) => {
   };
 
   return (
-    <header className="bg-[#07020e] py-[20px] shadow-md sticky z-50 px-[30px] top-0">
+    <header className="bg-[#07020e] py-[10px] shadow-md sticky z-50 px-[30px] top-0">
       <div className="flex items-center justify-between max-md:items-start max-md:gap-[20px] max-md:flex-row">
         <svg
           width="26"
@@ -44,6 +45,7 @@ const Header = ({ handleMenuClick }) => {
             />
           </svg>
           <ul className="flex gap-[20px] flex-col p-8">
+            <img className="w-[42px] h-[42px]" src={Logo} />
             <li
               onClick={() => {
                 handleMenuClick("hero");
@@ -96,7 +98,8 @@ const Header = ({ handleMenuClick }) => {
             </li>
           </ul>
         </nav>
-        <nav className={`block max-md:hidden`}>
+        <nav className={`flex flex-row items-center max-md:hidden`}>
+          <img className="w-[42px] h-[42px] mr-[1rem]" src={Logo} />
           <ul className="flex gap-[20px]">
             <li onClick={() => handleMenuClick("hero")}>
               <button className="text-[#FFBFFF] hover:text-[#d640d6] font-light cursor-pointer">
