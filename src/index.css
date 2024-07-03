@@ -245,7 +245,6 @@ code {
   padding: 20px;
   font-size: 14px;
   font-weight: 400;
-  cursor: pointer;
   --border-bottom-width: 1px;
   --border-color: #ff6eff;
   --border-left-width: 1px;
@@ -284,7 +283,6 @@ code {
   padding: 30px;
   font-size: 14px;
   font-weight: 400;
-  cursor: pointer;
   --border-bottom-width: 1px;
   --border-color: #ff6eff;
   --border-left-width: 1px;
@@ -303,6 +301,9 @@ code {
   min-width: 250px;
   opacity: 0;
   transform: translateY(50px);
+}
+.domain-card.reveal:hover {
+  transform: translateY(-20px);
 }
 
 .domain-icon {

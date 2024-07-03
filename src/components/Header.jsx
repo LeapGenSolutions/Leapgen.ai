@@ -128,7 +128,10 @@ const Header = ({ handleMenuClick }) => {
             </li>
           </ul>
         </nav>
-        <button className="text-[#FFBFFF] flex flex-row items-center">
+        <a
+          href="https://www.Leapgen.com/"
+          className="text-[#FFBFFF] flex flex-row items-center"
+        >
           <svg
             width="10"
             height="18"
@@ -146,7 +149,7 @@ const Header = ({ handleMenuClick }) => {
             />
           </svg>
           Leapgen Solutions
-        </button>
+        </a>
       </div>
     </header>
   );
