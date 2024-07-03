@@ -39,7 +39,7 @@ const Home = (props) => {
       });
       props.setloadHistory(false);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, [props.loadHistory]);
 
   return (

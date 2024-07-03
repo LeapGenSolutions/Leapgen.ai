@@ -13,7 +13,7 @@ function FeatureDetails(props) {
       behavior: "smooth",
     });
     props.setloadHistory(true);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    /* eslint-disable-next-line react-hooks/exhaustive-deps */
   }, []);
 
   return (

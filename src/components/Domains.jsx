@@ -70,12 +70,12 @@ const Domains = () => {
         }
       });
     }, options);
-    
-    const current_cardRef = cardRefs.current
+
+    const current_cardRef = cardRefs.current;
     cardRefs.current.forEach((card) => {
       if (card) observer.observe(card);
     });
-    
+
     return () => {
       if (current_cardRef) {
         current_cardRef.forEach((card) => {
