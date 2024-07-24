@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import ballImage from "../assets/ball.png";
+import BallVideo from "../assets/ball.mp4";
 
 const Hero = () => {
   return (
@@ -19,7 +19,10 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex-1 flex flex-col items-center min-w-[350px]">
-        <img alt="" src={ballImage} className="rounded-xl w-[450px]" />
+        <video width="50%" autoPlay muted loop>
+          <source src={BallVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   );
