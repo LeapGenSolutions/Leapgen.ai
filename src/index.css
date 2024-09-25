@@ -203,8 +203,16 @@ code {
   transition: transform 0.2s; /* Animation */
 }
 
+
+
+.wide-button{
+  max-height: 250px;
+  min-height: 40px;
+  width: 50%;
+}
+
 .feature-button:hover {
-  transform: scale(1.5rem);
+  transform: scale(1.5);
 }
 
 /* src/AiComponents  */
