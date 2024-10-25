@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import service1 from "../assets/features1.avif";
 import service2 from "../assets/features2.avif";
 import service3 from "../assets/features3.avif";
-import pdf_file from "../assets/Brouchere.pdf"
+import pdf_file from "../assets/LeapGen AI Brochure 2024.pdf"
 
 import "../index.css";
 import { Link } from "react-router-dom";

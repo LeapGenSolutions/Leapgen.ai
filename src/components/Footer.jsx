@@ -59,6 +59,9 @@ function Footer({ handleMenuClick }) {
             </li>
           </ul>
         </nav>
+        <p className="text-[#FFBFFF]">
+          44790 Maynard Square Suite 350, Ashburn, Virginia 20147
+        </p>
       </div>
 
       {/* Footer Section */}
