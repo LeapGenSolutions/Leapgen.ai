@@ -99,7 +99,10 @@ const Header = ({ handleMenuClick }) => {
           </ul>
         </nav>
         <nav className={`flex flex-row items-center max-md:hidden`}>
-          <img alt="" className="w-[42px] h-[42px] mr-[1rem]" src={Logo} />
+          <img alt="" className="w-[42px] h-[42px] mr-[1rem] hover:cursor-pointer" src={Logo} onClick={() => {
+                handleMenuClick("hero");
+                setNavOpen(false);
+              }}/>
           <ul className="flex gap-[20px]">
             <li onClick={() => handleMenuClick("hero")}>
               <button className="text-[#FFBFFF] hover:text-[#d640d6] font-light cursor-pointer">
