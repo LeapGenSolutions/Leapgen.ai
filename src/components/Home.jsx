@@ -7,7 +7,6 @@ import Footer from "../components/Footer";
 import AiComponents from "../components/AiComponents";
 import Domains from "../components/Domains";
 import Features from "../components/Features";
-import Partners from "../components/Partners";
 
 const Home = (props) => {
   const heroRef = useRef(null);
@@ -61,7 +60,6 @@ const Home = (props) => {
       <div ref={servicesRef}>
         <Services />
       </div>
-      <Partners />
       <Footer handleMenuClick={handleMenuClick} />
     </div>
   );
