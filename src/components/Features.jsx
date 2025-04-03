@@ -18,7 +18,7 @@ const Features = () => {
     },
     {
       id: 2,
-      title: "Octopus",
+      title: "Data Coffee",
       description:
         "Optimize data compliance and readiness with advanced processing.",
       icon: service1, // Replace with actual path to the icon
