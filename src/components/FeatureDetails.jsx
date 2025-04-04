@@ -29,7 +29,7 @@ function FeatureDetails(props) {
         BACK
       </h2>
       <h1 className="text-[72px] max-md:text-[52px] font-bold leading-[1.5em] tracking-[-2px] text-left text-gradient full_details">
-        {id === "SurroundAI" ? "SURROUND AI" : id.toUpperCase()}
+        {id === "SurroundAI" ? "SURROUND AI" : id === "Octopus" ? "DATA COFFEE" : id.toUpperCase()}
       </h1>
       <div className="relative z-10 flex flex-row flex-wrap max-md:flex-col max-md:w-fit items-center p-10 bg-[#07020e] rounded-xl custom-border-container full_details">
         <p className="text-base description max-md:text-[16px] my-[2.5rem]">
