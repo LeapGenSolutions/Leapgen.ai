@@ -29,13 +29,13 @@ function FeatureDetails(props) {
         BACK
       </h2>
       <h1 className="text-[72px] max-md:text-[52px] font-bold leading-[1.5em] tracking-[-2px] text-left text-gradient full_details">
-        {id === "SurroundAI" ? "SURROUND AI" : id === "Octopus" ? "DATA COFFEE" : id.toUpperCase()}
+        {id === "SurroundAI" ? "SURROUND AI" : id === "DataCoffee" ? "DATA COFFEE" : id.toUpperCase()}
       </h1>
       <div className="relative z-10 flex flex-row flex-wrap max-md:flex-col max-md:w-fit items-center p-10 bg-[#07020e] rounded-xl custom-border-container full_details">
         <p className="text-base description max-md:text-[16px] my-[2.5rem]">
           {id === "SurroundAI"
             ? "A dynamic framework designed to develop customized conversational AI solutions. SurroundAI equips businesses with built-in accelerators that are immediately deployable within the customer's environment, allowing for significant flexibility in creating solutions that are either fully custom or based on existing architectural patterns. To improve customer interaction through sophisticated AI-driven conversations organizations can use our product Surround AI."
-            : id === "Octopus"
+            : id === "DataCoffee"
               ? "Data Coffee by LeapGen is a sophisticated solution designed to centralize and secure data management, significantly enhancing analytics, governance, and regulatory compliance. It serves as a robust data management platform that streamlines data handling and empowers decision-making through comprehensive analytics."
               : "A revolutionary platform that automates the medical prior authorization process by intelligently analyzing patient data and matching it against clinical guidelines and insurance policies. Seismic significantly streamlines healthcare workflows, enabling faster and more accurate decision-making, thus improving patient care and reducing administrative burdens."}
         </p>

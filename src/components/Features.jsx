@@ -89,7 +89,7 @@ const Features = () => {
       <a 
         className="text-[18px] font-semibold border-[1px] text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-blue-500 transition-all duration-300 ease-in-out px-4 py-2 rounded-lg shadow-lg flex flex-row items-center justify-center"
         href={pdf_file} 
-        download={"LeapGen AI Brochure 2024.pdf"}>
+        download={"LeapGen AI Brochure 2025.pdf"}>
           Download our brochure now!
       </a>
       <div className="flex flex-wrap flex-col md:flex-row items-center justify-center gap-8">
