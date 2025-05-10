@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import surround_ai_pdf_file from "../assets/SurroundAI_Product_Brochure_2025.pdf"
+import data_coffeee_pdf_file from "../assets/Data_Coffee_Product_Brochure_2025.pdf"
+import seismic_pdf_file from "../assets/Seismic_Product_Brochure_2025.pdf"
 
 
 function FeatureDetails(props) {
@@ -42,13 +45,28 @@ function FeatureDetails(props) {
 
       </div>
       {id === "SurroundAI" && (
-        <Link
-          to={`https://webapp-frontend-gy4phravzt2ak.azurewebsites.net/`}
-          className="feature-button surround-ai-button"
-          target="_blank"
-        >
-          TRY IT !
-        </Link>
+        <a
+          className="text-[18px] font-semibold border-[1px] text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-blue-500 transition-all duration-300 ease-in-out px-4 py-2 rounded-lg shadow-lg flex flex-row items-center justify-center"
+          href={surround_ai_pdf_file}
+          download={"SurroundAI Product Brochure 2025.pdf"}>
+          Download the product brochure!
+        </a>
+      )}
+      {id === "DataCoffee" && (
+        <a
+          className="text-[18px] font-semibold border-[1px] text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-blue-500 transition-all duration-300 ease-in-out px-4 py-2 rounded-lg shadow-lg flex flex-row items-center justify-center"
+          href={data_coffeee_pdf_file}
+          download={"Data Coffee Product Brochure 2025.pdf"}>
+          Download the product brochure!
+        </a>
+      )}
+      {id === "Seismic" && (
+        <a
+          className="text-[18px] font-semibold border-[1px] text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-pink-500 hover:to-blue-500 transition-all duration-300 ease-in-out px-4 py-2 rounded-lg shadow-lg flex flex-row items-center justify-center"
+          href={seismic_pdf_file}
+          download={"Seismic Product Brochure 2025.pdf"}>
+          Download the product brochure!
+        </a>
       )}
     </div>
   );
