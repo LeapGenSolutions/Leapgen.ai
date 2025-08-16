@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7799e33e.css",
+    "main.js": "/static/js/main.8ffcefc7.js",
+    "static/js/453.9ee84c95.chunk.js": "/static/js/453.9ee84c95.chunk.js",
+    "static/media/ball.mp4": "/static/media/ball.bd6b14851ec305e1e07a.mp4",
+    "static/media/SurroundAI_Product_Brochure_2025.pdf": "/static/media/SurroundAI_Product_Brochure_2025.6b05d8f513aad34efde9.pdf",
+    "static/media/Data_Coffee_Product_Brochure_2025.pdf": "/static/media/Data_Coffee_Product_Brochure_2025.3e53d569919f2d6c46dd.pdf",
+    "static/media/Seismic_Product_Brochure_2025.pdf": "/static/media/Seismic_Product_Brochure_2025.e433d2d46ce5cf196a2b.pdf",
+    "static/media/LeapGen AI Brochure 2024.pdf": "/static/media/LeapGen AI Brochure 2024.a9702d3b2d3bc2f89d21.pdf",
+    "static/media/globe-image.png": "/static/media/globe-image.75fc7c481f7a3e762cf8.png",
+    "static/media/features1.avif": "/static/media/features1.bf966176725df0cdb434.avif",
+    "static/media/logo.png": "/static/media/logo.3825b1abefd26a315568.png",
+    "static/media/retail.webp": "/static/media/retail.c3818abfad2260f4defb.webp",
+    "static/media/features2.avif": "/static/media/features2.ecd5d285efb5bc60f721.avif",
+    "static/media/features3.avif": "/static/media/features3.f4ed88a0a95675942e0e.avif",
+    "static/media/public.avif": "/static/media/public.20097dd8e788aba95104.avif",
+    "static/media/govt.avif": "/static/media/govt.188b196ab5ba4288f923.avif",
+    "index.html": "/index.html",
+    "main.7799e33e.css.map": "/static/css/main.7799e33e.css.map",
+    "main.8ffcefc7.js.map": "/static/js/main.8ffcefc7.js.map",
+    "453.9ee84c95.chunk.js.map": "/static/js/453.9ee84c95.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7799e33e.css",
+    "static/js/main.8ffcefc7.js"
+  ]
+}
