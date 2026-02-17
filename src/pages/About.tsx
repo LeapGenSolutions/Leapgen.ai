@@ -72,11 +72,10 @@ const About = () => {
   ]
 
   const timeline = [
-    { year: '2020', title: 'Company Founded', description: 'LeapGen.AI was founded with a mission to democratize AI for enterprises of all sizes.' },
-    { year: '2021', title: 'First Product Launch', description: 'Launched SurroundAI, our flagship customer support automation platform.' },
-    { year: '2022', title: 'Series A Funding', description: 'Raised $25M Series A to accelerate product development and market expansion.' },
-    { year: '2023', title: 'Platform Expansion', description: 'Introduced Data Coffee and Seismic, completing our comprehensive AI platform.' },
-    { year: '2024', title: 'Global Scale', description: 'Reached 500+ enterprise customers across 25 countries with 99.9% uptime.' }
+    { year: '2024', title: 'Company Founded', description: 'LeapGen.AI was founded with a mission to democratize AI for enterprises of all sizes.' },
+    { year: '2025', title: 'First Product Launch', description: 'Launched SurroundAI, our flagship customer support automation platform.' },
+    { year: '2025', title: 'Platform Expansion', description: 'Introduced Data Coffee and Seismic, completing our comprehensive AI platform.' },
+    { year: '2026', title: 'Global Scale', description: 'Reached 500+ enterprise customers across 25 countries with 99.9% uptime.' }
   ]
 
   return (
